@@ -1,11 +1,58 @@
-$background: pink;
-$colortext: teal;
+$background: green;
+$colortext: red;
+$coloreparagrafo: white;
+$coloreIcone: #f7d351;
+$containerWidth: 300px;
+$containerHeight: 100%;
+$border: 3px solid $coloreparagrafo;
+$alignCenter: center;
+$padding: 20px;
+$uppercase: uppercase;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $colortext;
+    display: flex;
+    justify-content: $alignCenter;
+}
+
+.container {
+    width: $containerWidth;
+    height: $containerHeight;
+    background-color: $background;
+    border: $border;
+    text-align: $alignCenter;
+    padding: $padding;
+    margin: $padding;
+    float: left;
+    letter-spacing: $padding / 6;
+    line-height: $padding * 1.5;
+}
 
 button {
     background-color: $background;
     color: $colortext;
+    border: $border;
+    padding: $padding / 2;
+    text-transform: $uppercase;
 }
 
 h1 {
     color: $colortext;
+    text-transform: $uppercase;
+}
+
+i {
+    color: $coloreIcone;
+}
+
+p {
+    color: $coloreparagrafo;
+    margin: $padding;
 }
